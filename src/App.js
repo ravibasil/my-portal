@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+import DeclaredPosition from './containers/dashboard/DeclaredPosition';
+import VideoInterviewScheduled from './containers/dashboard/VideoInterviewScheduled';
+import InterviewSchedule from './containers/dashboard/InterviewSchedule';
+import ApplicantStatus from './containers/dashboard/ApplicantsStatus';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="right-content-das">
+        <div className="content-main-wrap">
+          <div className="top-heading">
+            <h3>Dashboard</h3>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'row' }}>
+            <div style={{ display: "flex", flexDirection: 'column' }}>
+              <div style={{ display: "flex", flexDirection: 'row', justifyContent: 'space-around' }}>
+                <DeclaredPosition />
+                <VideoInterviewScheduled />
+              </div>
+              <InterviewSchedule />
+            </div>
+            <ApplicantStatus />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
