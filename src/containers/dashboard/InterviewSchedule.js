@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function InterviewSchedule() {
   return (
@@ -17,5 +17,5 @@ export default function InterviewSchedule() {
         </div>
       </div>
     </div>
-  )
+  );
 }
