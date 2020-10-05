@@ -477,10 +477,17 @@ body {
 .vertical-bar {
   width: 16px;
   height: 90px;
-  background-color: #007bff;
+  background-color: #e9ecef;
+  transform: rotate(180deg);
 }
 .vertical-progress {
-  background-color: #e9ecef;
+  background-color: #007bff;
+}
+.vertical-progress.secondary {
+  background-color: #209f84;
+}
+.vertical-progress.tertiory {
+  background-color: #f72b50;
 }
 .vertical-text {
   writing-mode: vertical-rl;

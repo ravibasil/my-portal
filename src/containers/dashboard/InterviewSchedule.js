@@ -1,19 +1,16 @@
 import React from "react";
+import PieChart from "../../components/pie-chart";
 
 export default function InterviewSchedule() {
   return (
     <div className="card chart">
-      <h4 className="card-title">Interview Schedules</h4>
-      <div className="chart-row ">
+      <h4 className="card-title mb-4">Interview Schedules</h4>
+      <div className="chart-row mt-4">
         <div className="img-c">
-          <figure>
-            <img className="mw-100 mx" src="assets/images/f.png" alt="" />
-          </figure>
+          <PieChart />
         </div>
         <div className="img-c">
-          <figure>
-            <img className="mw-100 mx" src="assets/images/f.png" alt="" />
-          </figure>
+          <PieChart />
         </div>
       </div>
     </div>

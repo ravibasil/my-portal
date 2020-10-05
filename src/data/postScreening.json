@@ -1,0 +1,5 @@
+{
+  "rejected": [30, 60, 90],
+  "onHold": [40, 50, 40],
+  "reviewPending": [73, 33, 37]
+}

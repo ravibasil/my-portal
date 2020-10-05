@@ -1,6 +1,8 @@
 import React from "react";
 
-export default function DeclaredPosition() {
+import positionData from "../../data/declaredPosition.json";
+
+const DeclaredPosition = () => {
   return (
     <div className="card">
       <div className="position-row">
@@ -19,13 +21,13 @@ export default function DeclaredPosition() {
                     <div
                       className="progress-bar"
                       role="progressbar"
-                      style={{ width: "25%" }}
+                      style={{ width: `${positionData.javaDeveloper}%` }}
                       aria-valuenow={25}
                       aria-valuemin={0}
                       aria-valuemax={100}
                     />
                   </div>
-                  <div>5</div>
+                  <div> {`${positionData.javaDeveloper}`} </div>
                 </div>
               </div>
             </div>
@@ -41,13 +43,13 @@ export default function DeclaredPosition() {
                     <div
                       className="progress-bar"
                       role="progressbar"
-                      style={{ width: "25%" }}
+                      style={{ width: `${positionData.reactDeveloper}%` }}
                       aria-valuenow={25}
                       aria-valuemin={0}
                       aria-valuemax={100}
                     />
                   </div>
-                  <div>5</div>
+                  <div>{`${positionData.reactDeveloper}`}</div>
                 </div>
               </div>
             </div>
@@ -63,13 +65,13 @@ export default function DeclaredPosition() {
                     <div
                       className="progress-bar"
                       role="progressbar"
-                      style={{ width: "25%" }}
+                      style={{ width: `${positionData.htmlDeveloper}%` }}
                       aria-valuenow={25}
                       aria-valuemin={0}
                       aria-valuemax={100}
                     />
                   </div>
-                  <div>5</div>
+                  <div> {`${positionData.htmlDeveloper}`} </div>
                 </div>
               </div>
             </div>
@@ -79,19 +81,19 @@ export default function DeclaredPosition() {
           <div className="card-body  p-4">
             <div className="media">
               <div className="media-body text-white">
-                <p className="mb-1">Java Developer, 2 Years</p>
+                <p className="mb-1">Vue Developer, 2 Years</p>
                 <div className="progress-container">
                   <div className="progress">
                     <div
                       className="progress-bar"
                       role="progressbar"
-                      style={{ width: "55%" }}
+                      style={{ width: `${positionData.vueDeveloper}%` }}
                       aria-valuenow={25}
                       aria-valuemin={0}
                       aria-valuemax={100}
                     />
                   </div>
-                  <div>5</div>
+                  <div>{`${positionData.vueDeveloper}`}</div>
                 </div>
               </div>
             </div>
@@ -100,4 +102,6 @@ export default function DeclaredPosition() {
       </div>
     </div>
   );
-}
+};
+
+export default DeclaredPosition;
