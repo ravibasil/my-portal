@@ -2,7 +2,7 @@ import React from "react";
 
 export default function VideoInterviewScheduled() {
   return (
-    <div className="card">
+    <div className="card VideoInterView--Card" >
       <div className="inter-wrap">
         <div className="video-interview">
           {/* <figure className="intericon">

@@ -215,7 +215,6 @@ ul {
 }
 
 .card {
-  margin-top: 50px;
   margin-bottom: 1.875rem;
   background-color: #fff;
   transition: all 0.5s ease-in-out;
@@ -234,6 +233,11 @@ ul {
   text-transform: capitalize;
   margin-top: 0;
   font-style: italic;
+}
+
+.VideoInterView--Card {
+  height: 100%;
+  justify-content: center;
 }
 
 /* .progress {
@@ -263,7 +267,7 @@ span.mr-3 {
 }
 
 .chart-row {
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,6 +334,9 @@ figure.intericon img {
   margin-top: 40px;
 }
 
+.postscreeing-wrap ul {
+  width: 300px;
+}
 .postscreeing-wrap ul li {
   float: left;
   display: flex;
@@ -441,7 +448,7 @@ body {
 
 .right-content-das {
   flex: 1;
-  padding: 50px;
+  padding: 5px 50px;
 }
 .custom-select span.material-icons {
   position: absolute;
@@ -492,4 +499,23 @@ body {
 .vertical-text {
   writing-mode: vertical-rl;
   text-align: end;
+}
+
+.Dashboard__Navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 17px;
+}
+
+.Dashboard__Navigation__Item {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Dashboard__Navigation__Item--checked {
+  background: #4cbcfe;
+  color: #fff;
 }
